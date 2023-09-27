@@ -1,0 +1,22 @@
+body > div {
+    width: 100px;
+    aspect-ratio: 1/1;
+    border: 8px solid red;
+    position: absolute;
+    animation: circle 2s ease-out infinite;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes circle {
+    from {
+    }
+    to {
+        width: 500px;
+        border: 1px solid white;
+    }
+}

@@ -1,0 +1,35 @@
+div > div {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    background-color: purple;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.9) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    left: -150px;
+    color: white;
+    transition-property: left;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+i {
+    font-size: 30px;
+}
+
+div > div:hover {
+    left: -10px;
+}
+
+div {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}

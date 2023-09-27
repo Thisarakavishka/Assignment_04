@@ -1,0 +1,81 @@
+body {
+    overflow: hidden;
+}
+
+body > div:first-child {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+body > div:first-child > img:first-child {
+    position: relative;
+    width: 500px;
+    aspect-ratio: auto;
+}
+
+body > div:first-child > img:first-child ~ img {
+    position: absolute;
+    width: 100px;
+    bottom: 5px;
+    animation: tire-animation 6s infinite ease-in-out;
+}
+
+body > div:first-child > img:nth-child(2) {
+    left: 40px;
+}
+
+body > div:first-child > img:nth-child(3) {
+    right: 55px;
+}
+
+@keyframes tire-animation {
+    0% {
+    }
+    90% {
+        transform: rotate(540deg);
+    }
+    100% {
+        transform: rotate(540deg);
+    }
+}
+
+body > div:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    height: fit-content;
+    width: fit-content;
+    animation: road-and-city 6s infinite ease-in-out;
+}
+
+body > div:nth-child(3) > div {
+    position: relative;
+    width: 5139px;
+    height: fit-content;
+    display: flex;
+    overflow-x: hidden;
+}
+
+body > img {
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    aspect-ratio: auto;
+    z-index: -1;
+}
+
+@keyframes road-and-city {
+    0% {
+    }
+    90% {
+        margin-left: -2200px;
+    }
+    100% {
+        margin-left: -2200px;
+    }
+}

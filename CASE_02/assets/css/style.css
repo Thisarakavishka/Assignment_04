@@ -1,0 +1,39 @@
+body > div {
+    height: 100vh;
+    width: 100vw;
+    background-color: dodgerblue;
+}
+
+h3{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > div > div{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-color: grey;
+    border: 10px solid white;
+    border-top: 10px solid red;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition-duration: 1.5s;
+}
+
+body > div > div:hover{
+    transform: rotate(360deg);
+}

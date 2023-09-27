@@ -1,0 +1,58 @@
+body > main > section > div {
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+body > main > section > div:first-child {
+    background-image: url("/CASE_05/assets/img/slide1.jpeg");
+}
+
+body > main > section > div:nth-child(2) {
+    background-image: url("/CASE_05/assets/img/slide2.jpeg");
+}
+
+body > main > section > div:nth-child(3) {
+    background-image: url("/CASE_05/assets/img/slide3.jpeg");
+}
+
+body > main > section > div:nth-child(4) {
+    background-image: url("/CASE_05/assets/img/slide4.jpeg");
+}
+
+body > main > section {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    animation: this-animation 5s ease-in-out alternate infinite;
+}
+
+body > main {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    border: 5px solid red;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes this-animation {
+    0%, 20% {
+        margin-left: 0;
+    }
+    25%, 45% {
+        margin-left: -50vw;
+    }
+    50%, 70% {
+        margin-left: -100vw;
+    }
+    75%, 100% {
+        margin-left: -150vw;
+    }
+}
